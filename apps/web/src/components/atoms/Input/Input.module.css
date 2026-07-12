@@ -1,0 +1,25 @@
+.input {
+  width: 100%;
+  min-height: 40px;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 0.65rem 1rem;
+  background: #a6a6a6;
+  color: #172126;
+  font: inherit;
+  font-size: 0.95rem;
+}
+
+.input:focus {
+  border-color: #77f784;
+  outline: 2px solid #77f784;
+  outline-offset: 2px;
+}
+
+@media (max-height: 700px) and (min-width: 820px) {
+  .input {
+    min-height: 36px;
+    padding-block: 0.45rem;
+  }
+}

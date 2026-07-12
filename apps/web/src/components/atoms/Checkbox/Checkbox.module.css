@@ -1,0 +1,42 @@
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #a8a8a8;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+}
+
+.box {
+  display: grid;
+  width: 20px;
+  height: 20px;
+  flex: 0 0 20px;
+  place-items: center;
+  box-sizing: border-box;
+  border: 2px solid #a8a8a8;
+  border-radius: 4px;
+}
+
+.input:checked + .box::after {
+  width: 5px;
+  height: 10px;
+  border: solid #77f784;
+  border-width: 0 2px 2px 0;
+  content: '';
+  transform: translateY(-1px) rotate(45deg);
+}
+
+.input:focus-visible + .box {
+  outline: 3px solid #77f784;
+  outline-offset: 3px;
+}

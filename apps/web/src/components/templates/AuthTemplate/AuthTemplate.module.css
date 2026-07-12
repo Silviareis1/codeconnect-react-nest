@@ -1,0 +1,99 @@
+.page {
+  position: relative;
+  display: grid;
+  min-height: 100svh;
+  box-sizing: border-box;
+  place-items: center;
+  overflow-x: clip;
+  padding: 2rem 1rem;
+  background: #020f14;
+}
+
+.panel {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  width: min(100%, 994px);
+  box-sizing: border-box;
+  border-radius: 29px;
+  padding: clamp(1.5rem, 5vw, 3.4rem);
+  background: #171d1f;
+}
+
+.bannerWrapper { display: none; }
+.formColumn { display: grid; justify-items: center; }
+
+.brandShape {
+  position: absolute;
+  width: 360px;
+  height: 360px;
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+.brandShape span {
+  position: absolute;
+  width: 95px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 42px solid #10232b;
+  border-radius: 80px;
+  transform: rotate(-45deg);
+}
+
+.brandShape span:first-child { left: 74px; top: 20px; }
+.brandShape span:last-child { right: 74px; bottom: 20px; }
+.brandShapeTop { left: 5%; top: -4%; }
+.brandShapeBottom { right: -1%; bottom: -6%; transform: rotate(180deg); }
+
+@media (min-width: 820px) {
+  .page { padding: 3rem; }
+  .panel {
+    grid-template-columns: minmax(310px, 407px) minmax(318px, 1fr);
+    gap: clamp(2.5rem, 5vw, 4.25rem);
+    padding: clamp(2.5rem, 4vw, 3.4rem) clamp(3rem, 4vw, 4.8rem);
+  }
+  .bannerWrapper { display: block; align-self: center; overflow: hidden; }
+  .banner { display: block; width: 100%; height: auto; }
+}
+
+@media (max-height: 800px) and (min-width: 820px) {
+  .page {
+    padding: 1rem;
+  }
+
+  .panel {
+    grid-template-columns: auto 318px;
+    gap: 2rem;
+    width: fit-content;
+    max-width: 100%;
+    padding: 1.5rem 2rem;
+  }
+
+  .bannerWrapper {
+    display: grid;
+    align-items: center;
+    justify-items: end;
+  }
+
+  .banner {
+    width: auto;
+    max-width: 100%;
+    height: min(560px, calc(100svh - 8rem));
+  }
+}
+
+@media (max-height: 700px) and (min-width: 820px) {
+  .page {
+    padding: 0.75rem;
+  }
+
+  .panel {
+    gap: 1.5rem;
+    padding: 1rem 1.5rem;
+  }
+
+  .banner {
+    height: min(500px, calc(100svh - 5.5rem));
+  }
+}

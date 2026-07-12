@@ -1,0 +1,11 @@
+.group {
+  display: flex;
+  justify-content: center;
+  gap: 1.75rem;
+}
+
+@media (max-height: 700px) and (min-width: 820px) {
+  .group {
+    gap: 1.25rem;
+  }
+}

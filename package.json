@@ -1,0 +1,18 @@
+{
+  "name": "code-connect",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@11.10.0",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "dev": "corepack pnpm --parallel --filter @code-connect/web --filter @code-connect/api dev",
+    "dev:web": "corepack pnpm --filter @code-connect/web dev",
+    "dev:api": "corepack pnpm --filter @code-connect/api start:dev",
+    "build": "corepack pnpm --filter @code-connect/web build && corepack pnpm --filter @code-connect/api build",
+    "build:web": "corepack pnpm --filter @code-connect/web build",
+    "build:api": "corepack pnpm --filter @code-connect/api build",
+    "start:api": "corepack pnpm --filter @code-connect/api start:prod"
+  }
+}

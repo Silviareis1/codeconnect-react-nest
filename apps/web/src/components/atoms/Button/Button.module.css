@@ -1,0 +1,31 @@
+.button {
+  min-height: 51px;
+  border: 0;
+  border-radius: 8px;
+  background: #77f784;
+  color: #06141a;
+  font: inherit;
+  font-size: 1.125rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 160ms ease, transform 160ms ease;
+}
+
+.button:hover {
+  background: #8bfa96;
+}
+
+.button:active {
+  transform: translateY(1px);
+}
+
+.button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 3px;
+}
+
+@media (max-height: 700px) and (min-width: 820px) {
+  .button {
+    min-height: 44px;
+  }
+}
