@@ -5,7 +5,43 @@
 
 .field label {
   color: #e5e5e5;
-  font-size: 1rem;
+  font-size: 1.125rem;
+}
+
+.control {
+  position: relative;
+}
+
+.inputWithAction {
+  padding-right: 3rem;
+}
+
+.endAction {
+  position: absolute;
+  top: 50%;
+  right: 0.5rem;
+  display: grid;
+  transform: translateY(-50%);
+}
+
+.error {
+  margin: 0;
+  color: #ffb4ab;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.success {
+  margin: 0;
+  color: #bfffc3;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+@media (min-width: 820px) {
+  .field label {
+    font-size: 1rem;
+  }
 }
 
 @media (max-height: 800px) and (min-width: 820px) {

@@ -5,22 +5,39 @@
   box-sizing: border-box;
   place-items: center;
   overflow-x: clip;
-  padding: 2rem 1rem;
-  background: #020f14;
+  padding: 3.5rem 1rem 7.5rem;
+  background: #00090e;
 }
 
 .panel {
   position: relative;
   z-index: 1;
   display: grid;
-  width: min(100%, 994px);
+  gap: 2.25rem;
+  width: min(100%, 326px);
   box-sizing: border-box;
-  border-radius: 29px;
-  padding: clamp(1.5rem, 5vw, 3.4rem);
+  border-radius: 16px;
+  padding: 1.9rem 0.9375rem 2.5rem;
   background: #171d1f;
 }
 
-.bannerWrapper { display: none; }
+.bannerWrapper {
+  display: block;
+  width: 100%;
+}
+
+.bannerWrapper picture {
+  display: block;
+}
+
+.banner {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin-inline: auto;
+}
+
 .formColumn { display: grid; justify-items: center; }
 
 .brandShape {
@@ -36,7 +53,7 @@
   width: 95px;
   height: 250px;
   box-sizing: border-box;
-  border: 42px solid #10232b;
+  border: 42px solid #132e35;
   border-radius: 80px;
   transform: rotate(-45deg);
 }
@@ -46,15 +63,54 @@
 .brandShapeTop { left: 5%; top: -4%; }
 .brandShapeBottom { right: -1%; bottom: -6%; transform: rotate(180deg); }
 
+@media (min-width: 600px) and (max-width: 819px) {
+  .page {
+    padding: 5.0625rem 3.8125rem 5.625rem;
+  }
+
+  .panel {
+    gap: 2.25rem;
+    width: min(100%, 646px);
+    border-radius: 29px;
+    padding: 3.4375rem 3.6875rem 4rem;
+  }
+
+  .formColumn {
+    width: min(100%, 480px);
+    justify-self: center;
+  }
+}
+
 @media (min-width: 820px) {
   .page { padding: 3rem; }
+  .brandShape { position: fixed; }
   .panel {
     grid-template-columns: minmax(310px, 407px) minmax(318px, 1fr);
     gap: clamp(2.5rem, 5vw, 4.25rem);
+    width: min(100%, 994px);
+    border-radius: 29px;
     padding: clamp(2.5rem, 4vw, 3.4rem) clamp(3rem, 4vw, 4.8rem);
   }
-  .bannerWrapper { display: block; align-self: center; overflow: hidden; }
-  .banner { display: block; width: 100%; height: auto; }
+  .bannerWrapper { align-self: center; }
+  .formColumn { justify-items: start; }
+}
+
+@media (min-width: 820px) and (min-height: 1000px) {
+  .page {
+    place-items: start center;
+    padding-top: clamp(8rem, 16.54svh, 13.4375rem);
+    padding-bottom: 0;
+  }
+
+  .pageExtended {
+    padding-top: 15svh;
+  }
+}
+
+@media (min-width: 820px) and (min-height: 801px) {
+  .pageExtended .formColumn {
+    transform: translateX(-0.75rem);
+  }
 }
 
 @media (max-height: 800px) and (min-width: 820px) {

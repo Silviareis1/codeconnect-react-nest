@@ -1,41 +1,5 @@
-.content {
-  display: grid;
-  align-content: center;
-  gap: 1.75rem;
-  width: min(100%, 318px);
-  color: #f1f1f1;
-}
-
-.header {
-  display: grid;
-  gap: 1.75rem;
-}
-
-.header h1,
-.header p,
 .register p {
   margin: 0;
-}
-
-.header h1 {
-  font-size: 1.9rem;
-  line-height: 1.1;
-}
-
-.header p {
-  font-size: 1.25rem;
-}
-
-.form {
-  display: grid;
-  gap: 1.1rem;
-}
-
-.options {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 1rem;
 }
 
 .forgotPassword {
@@ -50,19 +14,10 @@
 }
 
 .forgotPassword:focus-visible,
-.register button:focus-visible {
+.register a:focus-visible {
   border-radius: 3px;
-  outline: 3px solid #77f784;
+  outline: 3px solid #81fe88;
   outline-offset: 4px;
-}
-
-.submit {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  gap: 0.65rem;
-  margin-top: 0.85rem;
 }
 
 .register {
@@ -78,17 +33,18 @@
   font-size: 0.9rem;
 }
 
-.register button {
+.register a {
   display: inline-flex;
   align-items: center;
   gap: 0.75rem;
   border: 0;
   padding: 0;
   background: transparent;
-  color: #77f784;
+  color: #81fe88;
   font: inherit;
   font-size: 1.1rem;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .registerIcon {
@@ -98,28 +54,7 @@
   flex: 0 0 auto;
 }
 
-@media (max-width: 420px) {
-  .options { align-items: flex-start; flex-direction: column; }
-  .header p { font-size: 1.1rem; }
-}
-
 @media (max-height: 800px) and (min-width: 820px) {
-  .content {
-    gap: 1rem;
-  }
-
-  .header {
-    gap: 0.9rem;
-  }
-
-  .form {
-    gap: 0.75rem;
-  }
-
-  .submit {
-    margin-top: 0.35rem;
-  }
-
   .register {
     gap: 0.5rem;
     margin-top: 0;
@@ -127,30 +62,6 @@
 }
 
 @media (max-height: 700px) and (min-width: 820px) {
-  .content {
-    gap: 0.7rem;
-  }
-
-  .header {
-    gap: 0.6rem;
-  }
-
-  .header h1 {
-    font-size: 1.65rem;
-  }
-
-  .header p {
-    font-size: 1.1rem;
-  }
-
-  .form {
-    gap: 0.55rem;
-  }
-
-  .submit {
-    margin-top: 0.2rem;
-  }
-
   .register {
     gap: 0.3rem;
   }

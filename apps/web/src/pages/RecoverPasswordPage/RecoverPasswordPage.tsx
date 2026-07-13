@@ -1,7 +1,7 @@
-import { LoginForm } from '../../components/organisms/LoginForm/LoginForm';
+import { RecoverPasswordForm } from '../../components/organisms/RecoverPasswordForm/RecoverPasswordForm';
 import { AuthTemplate } from '../../components/templates/AuthTemplate/AuthTemplate';
 
-export function LoginPage() {
+export function RecoverPasswordPage() {
   return (
     <AuthTemplate
       bannerSrc="/assets/auth/login-banner.png"
@@ -9,7 +9,7 @@ export function LoginPage() {
       bannerMobileSrc="/assets/auth/login-banner-mobile.png"
       bannerAlt="Pessoa trabalhando em um computador em um ambiente de tecnologia"
     >
-      <LoginForm />
+      <RecoverPasswordForm />
     </AuthTemplate>
   );
 }

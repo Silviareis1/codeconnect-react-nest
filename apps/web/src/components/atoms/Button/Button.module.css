@@ -2,8 +2,8 @@
   min-height: 51px;
   border: 0;
   border-radius: 8px;
-  background: #77f784;
-  color: #06141a;
+  background: #81fe88;
+  color: #01080e;
   font: inherit;
   font-size: 1.125rem;
   font-weight: 700;
@@ -12,7 +12,7 @@
 }
 
 .button:hover {
-  background: #8bfa96;
+  background: #bfffc3;
 }
 
 .button:active {
@@ -22,6 +22,21 @@
 .button:focus-visible {
   outline: 3px solid #ffffff;
   outline-offset: 3px;
+}
+
+.button:disabled {
+  background: #5f9f64;
+  color: #132e35;
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.button:disabled:hover {
+  background: #5f9f64;
+}
+
+.button[aria-busy='true'] {
+  cursor: wait;
 }
 
 @media (max-height: 700px) and (min-width: 820px) {

@@ -41,6 +41,9 @@ importers:
 
   apps/web:
     dependencies:
+      '@fontsource/prompt':
+        specifier: ^5.2.8
+        version: 5.2.8
       '@vitejs/plugin-react':
         specifier: latest
         version: 6.0.3(vite@8.1.4(@types/node@26.1.1)(terser@5.49.0))
@@ -120,6 +123,9 @@ packages:
 
   '@emnapi/wasi-threads@1.2.2':
     resolution: {integrity: sha512-c95qOXkHdydNKhscBTebqEC1CVAZpyqOfVfBzQ1qgzyl3gfeldUjIggDbIZgDKsHLgnsM+igH7TJ/eAasaVuMA==}
+
+  '@fontsource/prompt@5.2.8':
+    resolution: {integrity: sha512-/ocBE0NMMgfzKXcwTsKDJOppc3UA7dBGl127b9uhNzqUlP0720FCSuUXEp2iJb7uC/jnfHW1da7oZtAHDv3whg==}
 
   '@inquirer/ansi@1.0.2':
     resolution: {integrity: sha512-S8qNSZiYzFd0wAcyG5AXCvUHC5Sr7xpZ9wZ2py9XR88jUz8wooStVx5M6dRzczbBWjic9NP7+rY0Xi7qqK/aMQ==}
@@ -1781,6 +1787,8 @@ snapshots:
     dependencies:
       tslib: 2.8.1
     optional: true
+
+  '@fontsource/prompt@5.2.8': {}
 
   '@inquirer/ansi@1.0.2': {}
 
