@@ -2,7 +2,7 @@
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  color: #a8a8a8;
+  color: #888888;
   font-size: 0.9rem;
   cursor: pointer;
 }
@@ -23,20 +23,20 @@
   flex: 0 0 20px;
   place-items: center;
   box-sizing: border-box;
-  border: 2px solid #a8a8a8;
+  border: 2px solid #888888;
   border-radius: 4px;
 }
 
 .input:checked + .box::after {
   width: 5px;
   height: 10px;
-  border: solid #77f784;
+  border: solid #81fe88;
   border-width: 0 2px 2px 0;
   content: '';
   transform: translateY(-1px) rotate(45deg);
 }
 
 .input:focus-visible + .box {
-  outline: 3px solid #77f784;
+  outline: 3px solid #81fe88;
   outline-offset: 3px;
 }

@@ -5,7 +5,13 @@
 
 .field label {
   color: #e5e5e5;
-  font-size: 1rem;
+  font-size: 1.125rem;
+}
+
+@media (min-width: 820px) {
+  .field label {
+    font-size: 1rem;
+  }
 }
 
 @media (max-height: 800px) and (min-width: 820px) {

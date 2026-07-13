@@ -3,7 +3,12 @@ import { AuthTemplate } from '../../components/templates/AuthTemplate/AuthTempla
 
 export function LoginPage() {
   return (
-    <AuthTemplate bannerSrc="/assets/auth/login-banner.png" bannerAlt="Pessoa trabalhando em um computador em um ambiente de tecnologia">
+    <AuthTemplate
+      bannerSrc="/assets/auth/login-banner.png"
+      bannerTabletSrc="/assets/auth/login-banner-tablet.png"
+      bannerMobileSrc="/assets/auth/login-banner-mobile.png"
+      bannerAlt="Pessoa trabalhando em um computador em um ambiente de tecnologia"
+    >
       <LoginForm />
     </AuthTemplate>
   );

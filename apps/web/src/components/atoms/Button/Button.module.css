@@ -2,8 +2,8 @@
   min-height: 51px;
   border: 0;
   border-radius: 8px;
-  background: #77f784;
-  color: #06141a;
+  background: #81fe88;
+  color: #01080e;
   font: inherit;
   font-size: 1.125rem;
   font-weight: 700;
@@ -12,7 +12,7 @@
 }
 
 .button:hover {
-  background: #8bfa96;
+  background: #bfffc3;
 }
 
 .button:active {

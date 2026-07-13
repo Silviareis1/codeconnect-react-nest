@@ -1,0 +1,80 @@
+.content {
+  display: grid;
+  align-content: center;
+  gap: 1.75rem;
+  width: 100%;
+  color: #e1e1e1;
+}
+
+.header {
+  display: grid;
+  gap: 1.75rem;
+}
+
+.header h1,
+.header p {
+  margin: 0;
+}
+
+.header h1 {
+  font-size: 1.625rem;
+  line-height: 1.2;
+}
+
+.header p {
+  font-size: 1.375rem;
+  line-height: 1.5;
+}
+
+.form {
+  display: grid;
+  gap: 1.1rem;
+}
+
+.options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.submit {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+  margin-top: 0.85rem;
+}
+
+@media (min-width: 820px) {
+  .content {
+    width: min(100%, var(--auth-form-width, 318px));
+  }
+
+  .header h1 {
+    font-size: 1.9rem;
+    line-height: 1.1;
+  }
+
+  .header p {
+    font-size: 1.25rem;
+    line-height: normal;
+  }
+}
+
+@media (max-height: 800px) and (min-width: 820px) {
+  .content { gap: 1rem; }
+  .header { gap: 0.9rem; }
+  .form { gap: 0.75rem; }
+  .submit { margin-top: 0.35rem; }
+}
+
+@media (max-height: 700px) and (min-width: 820px) {
+  .content { gap: 0.7rem; }
+  .header { gap: 0.6rem; }
+  .header h1 { font-size: 1.65rem; }
+  .header p { font-size: 1.1rem; }
+  .form { gap: 0.55rem; }
+  .submit { margin-top: 0.2rem; }
+}

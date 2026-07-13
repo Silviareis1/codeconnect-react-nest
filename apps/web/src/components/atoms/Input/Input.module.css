@@ -5,15 +5,15 @@
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 0.65rem 1rem;
-  background: #a6a6a6;
+  background: #888888;
   color: #172126;
   font: inherit;
   font-size: 0.95rem;
 }
 
 .input:focus {
-  border-color: #77f784;
-  outline: 2px solid #77f784;
+  border-color: #81fe88;
+  outline: 2px solid #81fe88;
   outline-offset: 2px;
 }
 
