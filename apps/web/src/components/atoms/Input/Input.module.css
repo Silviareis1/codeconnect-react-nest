@@ -17,6 +17,11 @@
   outline-offset: 2px;
 }
 
+.input[aria-invalid='true'] {
+  border-color: #ffb4ab;
+  outline-color: #ffb4ab;
+}
+
 @media (max-height: 700px) and (min-width: 820px) {
   .input {
     min-height: 36px;
