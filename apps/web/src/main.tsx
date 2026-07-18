@@ -4,10 +4,13 @@ import '@fontsource/prompt/400.css';
 import '@fontsource/prompt/500.css';
 import '@fontsource/prompt/700.css';
 import App from './App';
+import { AuthProvider } from './contexts/AuthContext';
 import './index.css';
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <AuthProvider>
+      <App />
+    </AuthProvider>
   </StrictMode>,
 );

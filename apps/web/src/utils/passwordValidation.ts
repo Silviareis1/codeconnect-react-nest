@@ -15,5 +15,8 @@ export function getPasswordRequirements(password: string): PasswordRequirement[]
 }
 
 export function isPasswordValid(password: string) {
-  return getPasswordRequirements(password).every((requirement) => requirement.met);
+  return (
+    password.length <= 128 &&
+    getPasswordRequirements(password).every((requirement) => requirement.met)
+  );
 }
