@@ -43,7 +43,7 @@ export class AuthController {
   @Post('register')
   @ApiOperation({
     summary: 'Cadastrar usuário',
-    description: 'Cria um usuário mantido exclusivamente em memória.',
+    description: 'Cria um usuário persistido no banco de dados.',
   })
   @ApiBody({
     type: RegisterDto,

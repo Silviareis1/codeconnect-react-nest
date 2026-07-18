@@ -18,8 +18,8 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     });
   }
 
-  validate(payload: JwtPayload) {
-    const user = this.authService.findPublicUserById(payload.sub);
+  async validate(payload: JwtPayload) {
+    const user = await this.authService.findPublicUserById(payload.sub);
 
     if (!user) {
       throw new UnauthorizedException('Token inválido.');
