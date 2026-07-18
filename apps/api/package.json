@@ -6,6 +6,9 @@
     "build": "nest build",
     "dev": "nest start --watch",
     "lint": "eslint src",
+    "migration:generate": "typeorm-ts-node-commonjs migration:generate -d src/database/data-source.ts",
+    "migration:run": "typeorm-ts-node-commonjs migration:run -d src/database/data-source.ts",
+    "migration:revert": "typeorm-ts-node-commonjs migration:revert -d src/database/data-source.ts",
     "start": "nest start",
     "start:dev": "nest start --watch",
     "start:prod": "node dist/main.js"
@@ -18,12 +21,16 @@
     "@nestjs/passport": "^11.0.5",
     "@nestjs/platform-express": "^11.1.28",
     "@nestjs/swagger": "^11.4.5",
+    "@nestjs/typeorm": "^11.0.3",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.15.1",
+    "dotenv": "^17.4.2",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
+    "pg": "^8.22.0",
     "reflect-metadata": "latest",
-    "rxjs": "latest"
+    "rxjs": "latest",
+    "typeorm": "^1.1.0"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
@@ -33,6 +40,7 @@
     "@types/passport-jwt": "^4.0.1",
     "eslint": "^10.7.0",
     "globals": "^17.7.0",
+    "ts-node": "^10.9.2",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.63.0"
   }
